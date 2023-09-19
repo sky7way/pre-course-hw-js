@@ -1,12 +1,11 @@
 // code
-
-let number1 = Math.floor(Math.random() * 100);
-const isEvenNumber = (num) => {
-    if (num % 2 === 0) {
-        console.log(`${num}: Это четное число`);
+const isEvenNumber = () => {
+    let number1 = Math.floor(Math.random() * 100);
+    if (number1 % 2) {
+        console.log(`${number1}: Это нечетное число`);
     } else {
-        console.log(`${num}: Это нечетное число`);
+        console.log(`${number1}: Это четное число`);
     }
 }
 
-isEvenNumber(number1);
+isEvenNumber();
